@@ -74,9 +74,6 @@ function Home() {
           <Row className="text-center mb-5">
             <Col>
               <h2 className="display-4 fw-bold text-info fs-1 fst-italic">Our Vision and Mission</h2>
-              <p className="lead fs-3" style={{ color: '#A0D1E9' }}>
-                We aim to revolutionize the way you interact with technology, combining innovation with seamless user experience.
-              </p>
             </Col>
           </Row>
 

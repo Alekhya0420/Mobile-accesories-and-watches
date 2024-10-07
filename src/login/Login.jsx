@@ -130,12 +130,14 @@ function Login() {
         <Container fluid className="d-flex justify-content-center align-items-center" style={{ height: '100vh', backgroundColor: '#1976d2' }}>
             <Row className="justify-content-center">
                 <Col>
+                <h2>Login</h2>
                     <Form 
                         onSubmit={handleSubmit(submitHandle)} 
                         className="p-4 rounded shadow-lg"
                         style={{ background: '#fff' }}
                     >
-                        <Form.Group controlId="formBasicEmail" className="mb-4">
+                        
+                        <Form.Group controlId="formBasicEmail" className="mb-4 text-start">
                             <Form.Label style={{ fontWeight: 'bold', color: '#333' }}>Email</Form.Label>
                             <Form.Control
                                 type="email"
@@ -145,7 +147,7 @@ function Login() {
                             />
                         </Form.Group>
 
-                        <Form.Group controlId="formBasicPassword" className="mb-4">
+                        <Form.Group controlId="formBasicPassword" className="mb-4 text-start">
                             <Form.Label style={{ fontWeight: 'bold', color: '#333' }}>Password</Form.Label>
                             <Form.Control
                                 type="password"

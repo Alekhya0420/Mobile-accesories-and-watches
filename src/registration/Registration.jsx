@@ -185,9 +185,10 @@ const Registration = () => {
         <Container fluid className="d-flex justify-content-center align-items-center" style={{ height: '100vh', backgroundColor: '#1976d2' }}>
             <Row className="justify-content-center">
                 <Col>
-                    <Form onSubmit={handleSubmit(submitHandle)} className="p-4 rounded shadow-lg" style={{ background: '#fff' }}>
+                <h2>Registration</h2>
+                    <Form onSubmit={handleSubmit(submitHandle)} className="p-5 rounded shadow-lg" style={{ background: '#fff' }}>
                         
-                        <Form.Group controlId="formName" className="mb-4">
+                        <Form.Group controlId="formName" className="mb-4 text-start">
                             <Form.Label style={{ fontWeight: 'bold', color: '#333' }}>Name</Form.Label>
                             <Form.Control
                                 type="text"
@@ -199,7 +200,7 @@ const Registration = () => {
                             <Form.Control.Feedback type="invalid">{errors.name?.message}</Form.Control.Feedback>
                         </Form.Group>
 
-                        <Form.Group controlId="formEmail" className="mb-4">
+                        <Form.Group controlId="formEmail" className="mb-4 text-start">
                             <Form.Label style={{ fontWeight: 'bold', color: '#333' }}>Email</Form.Label>
                             <Form.Control
                                 type="email"
@@ -211,7 +212,7 @@ const Registration = () => {
                             <Form.Control.Feedback type="invalid">{errors.email?.message}</Form.Control.Feedback>
                         </Form.Group>
 
-                        <Form.Group controlId="formPassword" className="mb-4">
+                        <Form.Group controlId="formPassword" className="mb-4 text-start">
                             <Form.Label style={{ fontWeight: 'bold', color: '#333' }}>Password</Form.Label>
                             <Form.Control
                                 type="password"
